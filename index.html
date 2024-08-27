@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartório de Imóveis de Mata de São João</title>
+    <link rel="stylesheet" href="C:\Users\Usuario\Documents\cartorio-imoveis\static\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #9282f1;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 25px;
+            color: oldlace;
+           
+        }
+        header {
+            position: relative;
+            padding: 40px;
+            height: 80vh; /* altura do vídeo cobrindo o topo da página */
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+            z-index: 1;
+        }
+
+        header video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+            z-index: -2;
+            opacity: 0.6;
+            
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        .search-container {
+            position: relative;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+        .search-container form {
+            display: flex;
+            align-items: flex-start;
+        }
+        .search-container input[type="search"] {
+            width: 300px;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+
+        }
+        .search-container button {
+            padding: 6px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+        .parallax {
+            height: 400px;
+            background: url('sua-imagem.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .content {
+            padding: 50px;
+            background-color: #fff;
+            z-index: 2;
+        }
+        .tamanho-especial {
+            font-size: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted loop>
+            <source src="C:\Users\Usuario\Documents\cartorio-imoveis\praia.mp4" type="video/mp4">
+        </video>
+        <img src="C:\Users\Usuario\Documents\cartorio-imoveis\cartorio-imoveis\Logo_Cartorio_Pedro_Pontes_de_Azevedo.png"  alt="img" height="120" width="90" >
+        <h1>CARTÓRIO DE REGISTRO DE IMÓVEIS<br>TÍTULOS E DOCUMENTOS E DAS PESSOAS JURÍDICAS DE MATA DE SÃO JOÃO</h1>
+        <div class="search-container">
+            <form id="form-busca-protocolos" onsubmit="return buscar(event, 'form-busca-protocolos')">
+                <input type="search" placeholder="Buscar Protocolos" name="query">
+                <button type="submit">Buscar</button>
+            </form>
+            <form id="form-busca-certidoes" onsubmit="return buscar(event, 'form-busca-certidoes')">
+                <input type="search" placeholder="Buscar Certidões" name="query">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            <li><a href="duvidas.html">Dúvidas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="informacoes.html">Informações do Cartório</a></li>
+            <li><a href="links.html">Links</a></li>
+            <li><a href="legislacao.html">Lesgislação</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h3>Bem-vindo ao Cartório De Registro De Imóveis De Mata De São João</h3>
+                <p>Registramos e regularizamos imóveis com eficiência e confiabilidade.</p>
+                <hr>
+            </div>
+        </section>
+        <section>
+            <h4>O Cartório</h4>
+            <p>
+                O Ofício do Registro De Imóveis, Títulos e Documentos e Pessoas Jurídicas é um Cartório de Registro de Imóveis, Registro Civil de Pessoas Jurídicas que está localizado na Rua Laurindo Régis, nº 548, Centro, cidade de Mata de São João em BA. Como estabelecimento cartorário de terceira entrância, possui atribuições para prestar serviços e expedir certidões e documentos em geral como cartório de registro de imóveis, registro de títulos e documentos, registro civil de pessoas jurídicas e sua abrangência é nos Municípios de Mata de São João e Itanagra.
+                Confira acima o telefone, bem como todos os dados para você entrar em contato com o cartório e solicitar documentações, horário de funcionamento, serviços ou certidões:
+                O responsável legal pelo Ofício Do Registro De Imóveis, Títulos e Documentos e Pessoas Jurídicas registrado junto aos órgãos de fiscalização do serviços notariais do Brasil é Pedro Pontes de Azevêdo.
+            </p>
+        </section>
+       
+        <img src="C:\Users\Usuario\Documents\cartorio-imoveis\cartorio-imoveis\20230207_181232.jpg" alt="cartório" height="720" width="1800" >
+        <section>
+            <hr>
+            <h5>Nossos Serviços</h5>
+            <p>Oferecemos uma variedade de serviços relacionados ao registro de imóveis, incluindo:</p>
+            <ul>
+                <li>Usufruto</li> 
+                <li>Benfeitorias</li>
+                <li>Averbações</li>  
+                <li>Permutas</li>
+                <li>Contratos</li>
+                <li>Certidões de atos registrados</li>
+                <li>Hipotecas</li>
+                <li>Escritura Pública</li>
+                <li>Usucapião</li>
+                <li>Doação</li>
+                <li>Penhoras</li>
+                <li>Matrícula do imóvel</li>
+            </ul>
+        </section>
+        <section>
+            <a href="informacoes.html" class="btn">
+                <button>CLIQUE AQUI E SAIBA MAIS</button>
+            </a>
+        </section>
+    </main>
+    <div class="results" id="results"></div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function buscar(event, formId) {
+            event.preventDefault();
+            var form = $('#' + formId);
+            var query = form.find('input[name="query"]').val();
+            console.log(`Form ID: ${formId}, Query: ${query}`);
+            $.ajax({
+                url: '/buscar',
+                type: 'POST',
+                data: { query: query },
+                success: function(data) {
+                    console.log("Data received:", data);
+                    var resultsDiv = $('#results');
+                    resultsDiv.empty();
+                    if (data.length === 0) {
+                        resultsDiv.append('<p>Nenhum resultado encontrado</p>');
+                    } else {
+                        var list = $('<ul></ul>');
+                        data.forEach(function(item) {
+                            var listItem = $('<li></li>').text(`Protocolo: ${item.numero_protocolo}, Status: ${item.status}`);
+                            list.append(listItem);
+                        });
+                        resultsDiv.append(list);
+                    }
+                },
+                error: function(err) {
+                    console.error("Error:", err);
+                }
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+    // Adiciona o evento de clique ao botão enviar
+    document.querySelector(".chat-input button").addEventListener("click", sendMessage);
+
+    // Adiciona o evento de pressionar 'Enter' no campo de texto
+    document.querySelector("#user-input").addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            sendMessage();
+        }
+    });
+});
+
+function sendMessage() {
+    var userInput = document.getElementById("user-input").value.trim();
+    if (userInput === "") return;
+
+    // Adiciona a mensagem do usuário no chat
+    addMessage(userInput, "user-message");
+
+    // Gera uma resposta automática do bot
+    var botResponse = getBotResponse(userInput);
+    setTimeout(function() {
+        addMessage(botResponse, "bot-message");
+    }, 1000); // Simula um atraso de 1 segundo
+
+    // Limpa o campo de entrada
+    document.getElementById("user-input").value = "";
+}
+
+function addMessage(text, className) {
+    var chatBody = document.getElementById("chat-body");
+    var messageDiv = document.createElement("div");
+    messageDiv.className = className;
+    messageDiv.textContent = text;
+    chatBody.appendChild(messageDiv);
+    chatBody.scrollTop = chatBody.scrollHeight; // Rolagem automática para o final do chat
+}
+
+function getBotResponse(input) {
+    // Respostas simples baseadas em palavras-chave
+    input = input.toLowerCase();
+    if (input.includes("olá") || input.includes("oi")) {
+        return "Olá! Como posso te ajudar?";
+    } else if (input.includes("serviço")) {
+        return "Oferecemos serviços como registro de imóveis, contratos, e certidões. Como posso te ajudar mais?";
+    } else if (input.includes("horário")) {
+        return "Nosso horário de funcionamento é de segunda a sexta, das 8h às 17h.";
+    } else {
+        return "Desculpe, não entendi. Pode reformular a pergunta?";
+    }
+}
+    </script>
+    <div class="chatbot">
+        <div class="chat-header">Chatbot</div>
+        <div class="chat-body" id="chat-body">
+            <div class="bot-message">Olá! Como posso te ajudar hoje?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+    
+</body>
+</html>
